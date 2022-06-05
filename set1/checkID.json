@@ -1,0 +1,34 @@
+{
+    "architecture": [
+        "64bit",
+        ""
+    ],
+    "machine": "x86_64",
+    "os_name": "posix",
+    "platform": "macOS-11.6.5-x86_64-i386-64bit",
+    "processor": "i386",
+    "release": "20.6.0",
+    "system": "Darwin",
+    "uname": [
+        "Darwin",
+        "z20.local",
+        "20.6.0",
+        "Darwin Kernel Version 20.6.0: Tue Feb 22 21:10:41 PST 2022; root:xnu-7195.141.26~1/RELEASE_X86_64",
+        "x86_64",
+        "i386"
+    ],
+    "version": "Darwin Kernel Version 20.6.0: Tue Feb 22 21:10:41 PST 2022; root:xnu-7195.141.26~1/RELEASE_X86_64",
+    "python_build": [
+        "v3.10.4:9d38120e33",
+        "Mar 23 2022 17:29:05"
+    ],
+    "python_compiler": "Clang 13.0.0 (clang-1300.0.29.30)",
+    "python_implementation(": "CPython",
+    "python_version(": "3.10.4",
+    "python_version_tuple": [
+        "3",
+        "10",
+        "4"
+    ],
+    "cpu_count": 4
+}
