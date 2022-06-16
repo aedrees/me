@@ -15,18 +15,18 @@ import platform
 # I think this will print "hello! Let's get started" by calling the print function.
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 
-some_words = ["what", "does", "this", "line", "do", "?"]
-
+some_words = ["what", "does", "this", "line", "do", "?"] 
+# I think this will print "what, does, this, line, do, ?" by calling the lists variables
 for word in some_words:
-    print(word)
-
+    print(word) #it printed what, does, this, line, do, ? as word.
+# I think this will print the same: "what, does, this, line, do, ?" 
 for x in some_words:
-    print(x)
-
-print(some_words)
-
+    print(x) #it printed what, does, this, line, do, ? same as above.
+# I think this might print "what, does, this, line, do, ?" 
+print(some_words) #it printed ['what', 'does', 'this', 'line', 'do', '?']
+# I think this might print the text between the "".
 if len(some_words) > 3:
-    print("some_words contains more than 3 words")
+    print("some_words contains more than 3 words") #it printed some_words contains more than 3 words.
 
 
 def usefulFunction():
@@ -35,7 +35,7 @@ def usefulFunction():
     what the line below does:
     https://docs.python.org/3/library/platform.html#platform.uname
     """
-    print(platform.uname())
+    print(platform.uname()) # it printed "uname_result(system='Darwin', node='z20.local', release='20.6.0', version='Darwin Kernel Version 20.6.0: Tue Feb 22 21:10:41 PST 2022; root:xnu-7195.141.26~1/RELEASE_X86_64', machine='x86_64')""
 
 
 usefulFunction()
