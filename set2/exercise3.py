@@ -6,6 +6,7 @@ from ast import If
 from shutil import move
 
 from black import diff
+from numpy import append
 
 
 def is_odd(a_number):
@@ -196,7 +197,10 @@ def loops_5():
     """
     i_num = []
     for i in range(10):
-        i_num.append(str(i_num))
+        i_row = []
+        for j in range(5):
+            i_row.append('(i{0}, j{1})'.format(i, j))
+        i_num.append(i_row)
     return i_num
 
 
@@ -220,7 +224,13 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    right_triangle = []
+    for i in range(10):
+        row_tringle = []
+        for j in range( i + 1 ):
+            row_tringle.append(str(j))
+        right_triangle.append(row_tringle)
+    return right_triangle
 
 
 def loops_7():
@@ -244,7 +254,16 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+    p1 = []
+    for i in range(5):
+        s1 = []
+        for j in range(9):
+            if ( 5 - i - 2 < j and j < i + 5 ):
+                s1.append('*')
+            else:
+                s1.append(' ')
+        p1.append(s1)
+    return p1
 
 
 def little_printer(some_kind_of_list, exercise_name):
