@@ -5,6 +5,13 @@ Modify each function until the tests pass.
 """
 
 
+from email.mime import message
+from logging import exception
+from re import T
+
+from matplotlib.pyplot import step
+
+
 def loop_ranger(start, stop=None, step=1):
     """Return a list of numbers between start and stop in steps of step.
 
@@ -17,6 +24,7 @@ def loop_ranger(start, stop=None, step=1):
     Look up for how range() works in the python docs. You could  answer this
     with just the range function, but we'd like you to do it the long way.
     """
+    print (range(start, stop, step))
     list_a = []
     i = start
     while i < stop:
@@ -33,7 +41,7 @@ def two_step_ranger(start, stop):
 
     You can either reuse loop_ranger, or the range function that in the standard library
     """
-    return None
+    return range(start, stop, 2)
 
 
 def stubborn_asker(low, high):
@@ -44,7 +52,13 @@ def stubborn_asker(low, high):
 
     Look up the docs for a function called "input"
     """
-    return None
+    while True:
+        r_num = int(input()) # empty input!
+        if low < r_num < high:
+            print('Right!')
+            return r_num
+        else: 
+            print("Not between low and high. Try agine") 
 
 
 def not_number_rejector(message):
@@ -54,7 +68,13 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    return None
+    while True:
+        try: 
+            real_number = int(input(message))
+            print('{} is correct'.format(real_number))
+            return real_number
+        except:
+            print('No! try again')
 
 
 def super_asker(low, high):
@@ -63,7 +83,16 @@ def super_asker(low, high):
     Combine what you learnt from stubborn_asker and not_number_rejector
     to make a function that does it all!
     """
-    return None
+    while True:
+        try:
+            u_num = int(input())
+            if low < u_num < high:
+                print('{} is correct'.format(u_num))
+                return None
+            else: print('try diffrent num')
+        except:
+            print('No! try again')
+
 
 
 if __name__ == "__main__":
